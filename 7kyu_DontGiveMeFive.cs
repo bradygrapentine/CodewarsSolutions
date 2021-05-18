@@ -7,10 +7,6 @@ public class Kata
     var numList = new List<int>();
     for (var i = start; i < end + 1; i++)
     {
-//       if (i % 5 == 0 && i % 10 != 0)
-//       {
-//         continue;
-//       }
       if (i.ToString().ToList().Contains('5'))
       {
         continue;      
