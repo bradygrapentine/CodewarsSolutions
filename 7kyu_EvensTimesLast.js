@@ -8,3 +8,6 @@ function evenLast(numbers) {
 }
 
 // const evenLast = n => n.reduce((sum, val, i) => ((i % 2 == 0) ? sum += val: sum), 0) * n[n.length -1] || 0
+
+// const evenLast = n => (n.length > 0) ? n.reduce((sum, val, i) => ((i % 2 == 0) ? sum += val: sum), 0) * n[n.length -1]: 0
+
