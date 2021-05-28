@@ -1,4 +1,3 @@
-
 function zeros (n) {
   let kMax = Math.floor(Math.log(n) / Math.log(5))
   let k = 1
