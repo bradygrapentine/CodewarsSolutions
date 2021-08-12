@@ -6,18 +6,20 @@ class MorseCodeDecoder
 {
 	public static string Decode(string morseCode)
 	{
-    var words = morseCode.Trim().Split("   ");
-    List<string> decodedSentence = new List<string>();
-    foreach (var word in words) {
-      var characters = word.Split(" ");
-      var newWord = "";
-      foreach (var chr in characters) {
-        var decodedChar = MorseCode.Get(chr);
-        newWord += decodedChar;
-      }
-      decodedSentence.Add(newWord);
-    }
-    return String.Join(' ', decodedSentence);
+		var words = morseCode.Trim().Split("   ");
+          	List<string> decodedSentence = new List<string>();
+   		foreach (var word in words) 
+		{
+			var characters = word.Split(" ");
+      			var newWord = "";
+      			foreach (var chr in characters) 
+			{
+				var decodedChar = MorseCode.Get(chr);
+				newWord += decodedChar;
+			}
+			decodedSentence.Add(newWord);
+		}
+		return String.Join(' ', decodedSentence);
 	}
 }
 
