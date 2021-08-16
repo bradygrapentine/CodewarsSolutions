@@ -1,4 +1,4 @@
-function solution(number){
+function solution(number) {
   let result = ""
   const thousands = Math.floor(number / 1000)
   while (result.length < thousands) {
