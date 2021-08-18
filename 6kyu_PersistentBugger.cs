@@ -3,8 +3,8 @@ using System.Linq;
 
 public class Persist 
 {
-	public static int Persistence(long n) 
-	{
+  public static int Persistence(long n) 
+  {
     var count = 0;
     var searching = n.ToString().Length > 1 ? true : false;
     while (searching) 
