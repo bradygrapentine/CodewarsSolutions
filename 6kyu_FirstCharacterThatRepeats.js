@@ -1,8 +1,7 @@
 function firstDup (s) {
-  let spltStr = s.split('')
   let counts = {}
-  let result = ['', spltStr.length]
-  for (let i = 0; i< spltStr.length; i++) {
+  let result = ['', s.length]
+  for (let i = 0; i< s.length; i++) {
     if (counts.hasOwnProperty(s[i])) {
       if (result[1] > counts[`${s[i]}`]) {
         result[0] = s[i]
