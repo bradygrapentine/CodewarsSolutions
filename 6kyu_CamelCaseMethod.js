@@ -1,6 +1,10 @@
 String.prototype.camelCase=function() {
-  return this == "" || this == null ? Object.values(this).join('') : this.trim().split(' ').map(c => c[0].toUpperCase() + c.slice(1)).join('')
+  return this.split(' ').map(c => c.charAt(0).toUpperCase() + c.slice(1)).join('')
 }
+
+// String.prototype.camelCase=function() {
+//   return this == "" || this == null ? Object.values(this).join('') : this.trim().split(' ').map(c => c[0].toUpperCase() + c.slice(1)).join('')
+// }
 
 // String.prototype.camelCase=function() {
 //       let str = Object.values(this).join('')
