@@ -33,3 +33,18 @@ class WhichAreIn
 }
 
 // https://www.codewars.com/kata/550554fd08b86f84fe000a58
+
+// using System;
+// using System.Linq;
+// using System.Collections.Generic;
+
+// class WhichAreIn
+// {
+//   public static string[] inArray(string[] array1, string[] array2)
+//   {
+//     return array1.Distinct()
+//                  .Where(x => array2.ToList().Any(y => y.Contains(x)))
+//                  .OrderBy(z => z)
+//                  .ToArray();
+//   }
+// }
