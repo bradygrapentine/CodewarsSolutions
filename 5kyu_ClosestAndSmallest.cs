@@ -13,9 +13,7 @@ public class ClosestWeight
       
       var strngAsList = strng.Split(' ').Select(g => Convert.ToInt32(g)).ToList();
       
-      var newStrngAsList = strng.Split(' ').ToList().Select((z,i) => new int[] {z.ToCharArray().Sum(y => Convert.ToInt32(y.ToString())), i, strngAsList[i]}).ToArray();
-      
-      var sortedNewStrngAsList = newStrngAsList.OrderBy(x => x[0]).ToList();
+      var sortedNewStrngAsList = strng.Split(' ').ToList().Select((z,i) => new int[] {z.ToCharArray().Sum(y => Convert.ToInt32(y.ToString())), i, strngAsList[i]}).OrderBy(x => x[0]).ToList();;
       
       int[][] result =
       {
